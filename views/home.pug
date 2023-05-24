@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="author", content="tharunoptimus")
+        meta(name="keywords", content="search engine")
+        meta(name="description", content="Search Engine to search sites and images")
+        meta(name="theme-color" content="#FFFFFF")
+        link(rel="manifest", href="/manifest.json")
+        link(rel="shortcut icon", href="favicon.ico")
+        script(src="/js/pace.js")
+        link(rel="stylesheet" href="/css/pace.css")
+        link(rel="apple-touch-icon" href="/apple-touch-icon.png")
+        style.
+            @font-face{font-family:sans;src:url(/css/sans.ttf) format("truetype");font-display:swap}*{font-family:sans,sans-serif,arial;color:#545454}body,html{height:100%;min-height:100%;margin:0}.bodyWrapper{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100%}.bodyWrapper .wrapper{display:flex;flex-direction:column;align-items:center;justify-content:center;flex:1;width:100%}.logoContainerDiv{display:flex;flex-direction:column;align-items:center;min-height:92px;max-height:290px;height:calc(100% - 560px);padding:20px;margin-bottom:1rem}.logoImageContainer{max-height:92px;position:relative;height:100%;margin-top:auto;display:block}.logoImageContainer>img{max-height:100%;max-width:100%;object-fit:contain;object-position:center bottom;width:auto;height:70px;aspect-ratio:auto 272/92}.inputFieldContainer{width:90%;margin:1rem;max-width:584px;background:#fff;display:flex;border:1px solid #dfe1e5;box-shadow:none;border-radius:24px;z-index:3;height:44px;margin:0 auto}.inputFieldContainer>div:focus,.inputFieldContainer>div:hover{background-color:#fff;border-radius:24px;box-shadow:0 1px 6px rgba(32,33,36,.28);border-color:rgba(223,225,229,0)}.inputFieldHolder{flex:1;display:flex;padding:5px 8px 0 16px;padding-left:14px;width:100%}.searchLogoContainer{margin-top:3px;color:#9aa0a6;height:27px;width:27px;display:inline-block;fill:currentColor;line-height:24px;position:relative}.searchLogoContainer svg{display:block;height:100%;width:100%}#searchTermInput{background-color:transparent;border:none;margin:0;margin-left:5px;padding:0;color:rgba(0,0,0,.87);word-wrap:break-word;outline:0;display:flex;flex:100%;-webkit-tap-highlight-color:transparent;height:34px;font-size:16px}#imageSearchButton,#searchButton{margin:1rem;background-color:#f8f9fa;border:1px solid #f8f9fa;border-radius:4px;color:#3c4043;font-family:arial,sans-serif;font-size:14px;margin:11px 4px;padding:0 16px;line-height:27px;height:36px;min-width:54px;text-align:center;cursor:pointer;user-select:none}
+
+        title Home
+    body
+        .bodyWrapper
+            .bodyWrapperHeader
+            .wrapper
+                .logoContainerDiv
+                    .logoImageContainer
+                        img(src="/images/logo.png", alt="Logo")
+                .inputFieldContainer
+                    .inputFieldHolder
+                        span.searchLogoContainer
+                            svg(focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24")
+                                path(d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z")
+                        input#searchTermInput(type="url", name="urlInput", aria-label="Search Box")
+                .buttonsContainer(style="display: flex;")
+                    button#searchButton(type="submit")
+                        span(style='padding: 0.5rem;') Search
+                    button#imageSearchButton(type="submit")
+                        span(style='padding: 0.5rem;') Image Search
+            .bodyWrapperFooter
+        script(src='/js/home.js')
